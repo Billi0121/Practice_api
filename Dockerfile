@@ -13,3 +13,5 @@ WORKDIR /app
 RUN python manage.py collectstatic --no-input
 
 CMD ["gunicorn", "practice_api.wsgi:application", "--bind", "0.0.0.0:8000"]
+
+!Hello
